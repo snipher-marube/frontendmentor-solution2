@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-p {
+body {
     font-size: 15px;
+    line-height: 1.5;
+    background-color: white;
 }
+
