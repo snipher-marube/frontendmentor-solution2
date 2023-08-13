@@ -2,9 +2,108 @@
 {% block title %}Home{% endblock %}
 {% load static tailwind_tags %}
 {% block content %}
-    <div class="flex flex-col items-center justify-center">
-        <h1 class="text-4xl font-bold text-gray-800">Welcome to News</h1>
-        <p class="text-softRed">This is a news website</p>
-        <a href="#" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">News</a>
-    </div>
+    <section>
+        <div class="container mx-auto  p-6 block  md:flex md:space-x-4">
+            <div class="w-full md:w-2/3">
+                <div>
+                    <img src="{% static 'assets/images/image-web-3-desktop.jpg' %}" alt="">
+                </div>
+                <div class=" gap-4 md:gap-6 md:flex mt-4">
+                    <div class="block md:w-1/2">
+                        <h1 class="font-Inter font-extrabold text-5xl pr-4 text-veryDarkBlue">The Bright Future of Web 3.0?</h1>
+                    </div>
+                    <div class="block md:w-1/2 md:space-y-4">
+                        <div>
+                            <p class="text-lg text-darkGrayishBlue pb-4 font-Inter">
+                                We dive into the next evolution of the web that claims to put the power
+                                of the platforms back into the hands of the people. But is it really fullfilling its promise?
+                            </p>
+                        </div>
+                        <div>
+                            <a href="#" class="text-offWhite font-Inter font-bold text-lg bg-softRed p-4 hover:bg-softOrange">READ MORE</a>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="w-full mt-6 md:mt-0 md:w-1/3 bg-veryDarkBlue ">
+                <div class="p-6">
+                    <h1 class="pb-4 text-4xl text-softOrange font-bold font-Inter">New</h1>
+                    <!--first new post start-->
+                    <div class="">
+                        <h1 class="text-offWhite text-bold text-xl font-Inter">Hydrogen VS Electric Cars</h1>
+                        <div class="pt-2 pb-8">
+                            <a href="#" class="text-grayishBlue hover:underline">Will hydrogen-fueled cars ever catch up to Evs</a>
+                        </div>
+                    </div>
+                    <!--first new post end-->
+    
+                    <!--second new post start-->
+                    <div class="">
+                        <h1 class="text-offWhite text-bold text-xl font-Inter ">The Downsides of AI Artistry</h1>
+                        <div class="pt-2 pb-8">
+                            <a href="#" class="text-grayishBlue hover:underline">What are the posible adverse effects of on-demand AI image generator?</a>
+                        </div>
+                    </div>
+                    <!--second new post end-->
+    
+                    <!--third new post start-->
+                    <div class="">
+                        <h1 class="text-offWhite text-bold text-xl font-Inter ">Is VC Funding Drying Up?</h1>
+                        <div class="pt-2">
+                        <a href="#" class="text-grayishBlue hover:underline">Private funding by VC is down 50% YOY. We take a look at what that means</a>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-6">
+        <div class="w-full container mx-auto p-6 justify-between block md:flex gap-4">
+            <div class="block w-full md:w-1/3 md:flex ">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full" src="{% static 'assets/images/image-retro-pcs.jpg' %}" alt="retro">
+                </div>
+
+                <div class="flex flex-col md:w-2/3 pl-4 pb-4">
+                    <div class="text-4xl font-bold text-grayishBlue ">01</div>
+                    <a href="#" class="text-md font-bold font-Inter text-veryDarkBlue hover:underline pb-2">Reviving Retro PCs</a>
+                    <p class="font-Inter text-darkGrayishBlue">
+                        What happens when old PCs are given modern upgrades?
+                    </p>
+                </div>
+            </div>
+            <div class="block w-full md:w-1/3 md:flex ">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full" src="{% static 'assets/images/image-top-laptops.jpg' %}" alt="laptops">
+                </div>
+
+                <div class="flex flex-col md:w-2/3 pl-4 pb-4">
+                    <div class="text-4xl font-bold text-grayishBlue ">02</div>
+                    <a href="#" class="text-md font-bold font-Inter text-veryDarkBlue hover:underline pb-2">Top Ten Laptops of 2022</a>
+                    <p class="font-Inter text-darkGrayishBlue">
+                        Our best picks of various needs and badgets?
+                    </p>
+                </div>
+            </div>
+            <div class="block w-full md:w-1/3 md:flex ">
+                <div class="w-full md:w-1/3">
+                    <img class="w-full" src="{% static 'assets/images/image-gaming-growth.jpg' %}" alt="gaming">
+                </div>
+
+                <div class="flex flex-col md:w-2/3 pl-4 pb-4">
+                    <div class="text-4xl font-bold text-grayishBlue ">03</div>
+                    <a href="#" class="text-md font-bold font-Inter text-veryDarkBlue hover:underline pb-2">The Growth of Gaming</a>
+                    <p class="font-Inter text-darkGrayishBlue">
+                        How the pandemic has sparked fresh opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
 {% endblock %}
