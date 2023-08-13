@@ -1,0 +1,23 @@
+{
+    "builds": [
+        {
+            "src": "news_homepage/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "15mb",
+                "runtime": "python3.9",
+                "buildCommand": "pip install -r requirements.txt && python manage.py migrate && python manage.py tailwind install && python manage.py collectstatic && python manage.py tailwind start"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/news_homepage/wsgi.py"
+        },
+        {
+            "src": "/static/(.*)",
+            "dest": "/static/$1"
+        }
+    ]
+}

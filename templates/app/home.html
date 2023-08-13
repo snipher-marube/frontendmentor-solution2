@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% load static tailwind_tags %}
+{% block content %}
+    <div class="flex flex-col items-center justify-center">
+        <h1 class="text-4xl font-bold text-gray-800">Welcome to News</h1>
+        <p class="text-softRed">This is a news website</p>
+        <a href="#" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">News</a>
+    </div>
+{% endblock %}

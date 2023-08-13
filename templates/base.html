@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static tailwind_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <link rel="shortcut icon" href="{% static 'assets/images/favicon-32x32.png' %}" type="image/x-icon">
+    <title> {% block title %} News | {% endblock %} </title>
+    {% tailwind_css %}
+  
+</head>
+<body>
+    {% block content %}
+        <!--content goes here-->
+    {% endblock %}
+</body>
+</html>
