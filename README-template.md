@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-news-homepage-using-django-and-tailwind-css-sldGXCcrpF)
-- Live Site URL: [Add live site URL here](https://frontendmentor-solution2.vercel.app/)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/responsive-news-homepage-using-django-and-tailwind-css-sldGXCcrpF)
+- Live Site URL: [live site](https://frontendmentor-solution2.vercel.app/)
 
 ## My process
 
